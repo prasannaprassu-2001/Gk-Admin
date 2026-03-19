@@ -1,0 +1,115 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+   font-family: "Inter", sans-serif;
+
+  background-color: #F5F7FB;
+  color: #1E293B;
+}
+
+/* ===== LINKS ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== LIST ===== */
+ul {
+  list-style: none;
+}
+
+/* ===== BUTTON ===== */
+button {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ===== INPUT ===== */
+input {
+  font-family: inherit;
+  outline: none;
+  border: none;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5F5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* ===== UTILITY CLASSES ===== */
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Spacing */
+.p-10 { padding: 10px; }
+.p-20 { padding: 20px; }
+
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+
+/* Text */
+.text-sm { font-size: 12px; }
+.text-md { font-size: 14px; }
+.text-lg { font-size: 18px; }
+
+.text-muted {
+  color: #64748B;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid #E2E8F0;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Button Primary */
+.btn-primary {
+  background: #0EA5E9;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0284C7;
+}

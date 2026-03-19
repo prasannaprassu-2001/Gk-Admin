@@ -1,0 +1,233 @@
+
+.content {
+  background: #f8fafc;
+}
+
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+
+.add-role-btn {
+  background: #0ea5e9 !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.add-role-btn:hover {
+  background: #0284c7 !important;
+}
+
+
+.section-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+
+.role-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.role-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 10px;
+  border-bottom: 1px solid #e5e7eb;
+  transition: 0.2s ease;
+  flex-wrap: wrap; 
+}
+
+.role-row:hover {
+  background: #f9fafb;
+}
+
+
+.role-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+  flex: 1;
+}
+
+.role-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #e0f2fe;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.role-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.role-sub {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+
+.role-col {
+  width: 120px;
+  text-align: center;
+}
+
+.value {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.label {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+
+.role-actions {
+  width: 120px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-btn {
+  background: #0ea5e9 !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.edit-btn:hover {
+  background: #0284c7 !important;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+  .role-col {
+    width: 100px;
+  }
+
+  .role-left {
+    min-width: 180px;
+  }
+
+  .page-title {
+    font-size: 18px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .add-role-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .role-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 10px;
+    background: #fff;
+  }
+
+  .role-left {
+    width: 100%;
+  }
+
+  .role-col {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 4px 0;
+  }
+
+  .value {
+    font-weight: 600;
+  }
+
+  .role-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  .page-title {
+    font-size: 16px;
+  }
+
+  .role-title {
+    font-size: 13px;
+  }
+
+  .role-sub {
+    font-size: 11px;
+  }
+
+  .edit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 350px) {
+
+  .role-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  .role-title {
+    font-size: 12px;
+  }
+}

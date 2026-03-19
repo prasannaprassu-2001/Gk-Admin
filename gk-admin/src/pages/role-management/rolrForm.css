@@ -1,0 +1,187 @@
+/* ================= MODAL BASE ================= */
+
+.role-modal .modal-dialog {
+  max-width: 500px;
+  margin: auto;
+}
+
+.role-modal .modal-content {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 10px;
+  width: 90%; /* ✅ fixed */
+}
+
+/* ================= HEADER ================= */
+
+.role-modal-header {
+  border-bottom: none;
+  text-align: center;
+  flex-direction: column;
+}
+
+.role-modal-header .modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0ea5e9;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* ================= BODY ================= */
+
+.role-modal-body {
+  padding: 20px 25px;
+}
+
+/* ================= FORM ================= */
+
+.form-label {
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  border: none !important;
+  border-bottom: 1px solid #cbd5f5 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  font-size: 13px;
+  padding-left: 0;
+}
+
+.form-input:focus {
+  box-shadow: none !important;
+  border-bottom: 1px solid #0ea5e9 !important;
+}
+
+/* ================= FOOTER ================= */
+
+.role-modal-footer {
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* ✅ important for mobile */
+}
+
+/* ================= BUTTONS ================= */
+
+.submit-btn {
+  background: #0ea5e9;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1px solid #cbd5f5;
+  color: #475569;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.submit-btn:hover {
+  background: #0284c7;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLETS */
+@media (max-width: 992px) {
+
+  .role-modal .modal-dialog {
+    max-width: 90%;
+  }
+
+  .role-modal-body {
+    padding: 18px 20px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .role-modal .modal-dialog {
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  .role-modal .modal-content {
+    border-radius: 12px;
+    padding: 8px;
+  }
+
+  .role-modal-header .modal-title {
+    font-size: 16px;
+  }
+
+  .sub-text {
+    font-size: 11px;
+  }
+
+  .role-modal-body {
+    padding: 15px;
+  }
+
+  .form-input {
+    font-size: 12px;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+  .role-modal .modal-dialog {
+    max-width: 98%;
+  }
+
+  .role-modal-body {
+    padding: 12px;
+  }
+
+  .role-modal-footer {
+    flex-direction: column; /* ✅ stack buttons */
+    align-items: stretch;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    width: 100%; /* full width buttons */
+    text-align: center;
+  }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 350px) {
+
+  .role-modal-header .modal-title {
+    font-size: 14px;
+  }
+
+  .form-label {
+    font-size: 11px;
+  }
+
+  .form-input {
+    font-size: 11px;
+  }
+}
